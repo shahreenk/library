@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Library 📚</h1>
+    </header>
+    <div class="btn-container">
+      <button id="new-book-btn">Add New Book</button>
+    </div>
+    <div class="table-container">
+      <table>
+        <colgroup>
+          <col width="300px" />
+          <col width="200px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Status</th>
+            <th scope="col">Remove Book</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="overlay">
+      <form>
+        <h2>Book Info</h2>
+        <input type="text" placeholder="Title" name="title" required />
+        <input type="text" placeholder="Author" name="author" required />
+        <input type="number" placeholder="Pages" name="pages" required />
+        <input type="radio" id="read" name="status" value="Read" required />
+        <label for="read">Read</label>
+        <input type="radio" id="unread" name="status" value="Unread" required />
+        <label for="unread">Unread</label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
